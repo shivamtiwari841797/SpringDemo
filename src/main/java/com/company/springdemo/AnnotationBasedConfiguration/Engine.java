@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Engine {
-    @Value("FIAT")
+    @Value("${engineName}")
     private String engineName;
 
     public String getEngineName() {

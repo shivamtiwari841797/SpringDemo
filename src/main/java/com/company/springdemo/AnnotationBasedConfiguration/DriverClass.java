@@ -7,6 +7,7 @@ public class DriverClass {
     public static void main(String[] args) {
         ApplicationContext applicationContext = new ClassPathXmlApplicationContext("AnnotationBasedConfig.xml");
         Car car = (Car) applicationContext.getBean("car");
+        System.out.println(car.getOwners());
         System.out.println(car.getModel());
         System.out.println(car.getEngine().getEngineName());
         car.setModel("Benz");
