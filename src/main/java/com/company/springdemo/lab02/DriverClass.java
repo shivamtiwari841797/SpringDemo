@@ -1,4 +1,4 @@
-package com.company.springdemo;
+package com.company.springdemo.lab02;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;

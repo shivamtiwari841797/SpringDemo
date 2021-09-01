@@ -1,4 +1,4 @@
-package com.company.springdemo;
+package com.company.springdemo.lab02;
 
 public class Person {
     private String name;

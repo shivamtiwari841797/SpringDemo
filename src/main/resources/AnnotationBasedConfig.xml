@@ -3,18 +3,6 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
-    <bean id="conference" class="com.company.springdemo.lab02.Conference">
-        <property name="sessionPlanner" ref="sessionPlanner"></property>
-    </bean>
 
-    <bean id="sessionPlanner" class="com.company.springdemo.lab02.SessionPlanner">
-        <property name="topics" ref="topics"></property>
-    </bean>
-    <context:property-placeholder location="classpath:jpmc.properties"/>
-
-    <util:map id="topics">
-        <entry key="45" value="${topics.45}"></entry>
-        <entry key="50" value="${topics.50}"></entry>
-        <entry key="60" value="${topics.60}"></entry>
-    </util:map>
+    <context:component-scan base-package="com.company.springdemo.AnnotationBasedConfiguration"/>
 </beans>
