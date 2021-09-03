@@ -3,11 +3,13 @@ package com.company.springdemo.lab03;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import java.util.Set;
 
 @Component
+@PropertySource("classpath:lab03.properties")
 public class Company {
 
     private String name;
